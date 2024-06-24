@@ -14,7 +14,7 @@ const AnimatedText = () => {
     gsap.to(textRef1.current, {
       xPercent: 100,
       ease: 'none',
-      repeat: -1,
+      repeat: -5,
       duration: 10,
       modifiers: {
         xPercent: gsap.utils.unitize(value => parseFloat(value) % 100)
@@ -23,7 +23,7 @@ const AnimatedText = () => {
     gsap.to(textRef2.current, {
       xPercent: 100,
       ease: 'none',
-      repeat: -1,
+      repeat: -5,
       duration: 10,
       modifiers: {
         xPercent: gsap.utils.unitize(value => parseFloat(value) % 100)
@@ -32,7 +32,7 @@ const AnimatedText = () => {
     gsap.to(textRef3.current, {
       xPercent: 100,
       ease: 'none',
-      repeat: -1,
+      repeat: -5,
       duration: 10,
       modifiers: {
         xPercent: gsap.utils.unitize(value => parseFloat(value) % 100)
@@ -41,38 +41,51 @@ const AnimatedText = () => {
   }, []);
 
   return (
-    <div className="relative flex justify-center items-center overflow-hidden w-full">
-      <Image src={hero} alt="Steak on a fork" width={612}
+    <div className="relative flex justify-center items-center overflow-hidden w-full pt-5">
+      <Image src={hero} alt="Steak on a fork" width={512}
         height={1351}
         className=' object-contain'
       />
 
-      <div className='flex flex-col'>
-        <h1
-          ref={textRef1}
-          className='whitespace-nowrap  text-[150px] font-black text-red-700'
-        >
-          MEATS QUALITY MEATS QUALITY MEATS QUALITY MEATS QUALITY
-        </h1>
-        <h1
-          ref={textRef2}
-          className='whitespace-nowrap  text-[150px] font-black text-red-700'
-        >
-          MEATS QUALITY MEATS QUALITY MEATS QUALITY MEATS QUALITY
-        </h1>
-        <h1
-          ref={textRef3}
-          className='whitespace-nowrap  text-[150px] font-black text-red-700'
-        >
-          MEATS QUALITY MEATS QUALITY MEATS QUALITY MEATS QUALITY
-        </h1>
+      <div className='"marquee"'>
+        <div className='marquee__group '>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
 
+
+        </div>
+        <div className='marquee__group' aria-hidden="true">
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+        </div>
+        <div className='marquee__group' aria-hidden="true">
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+          <span><h1 className='text-[150px]'>Quality Meats</h1></span>
+        </div>
 
       </div>
 
 
 
-      <Image src={hero} alt="Steak on a fork" width={612}
+      <Image src={hero} alt="Steak on a fork" width={512}
         height={1351}
         className=' object-contain absolute'
       />
