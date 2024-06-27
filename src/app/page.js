@@ -5,7 +5,8 @@ export default function Home() {
   return (
     <main className="flex flex-col min-h-full justify-between p-5 ">
       <Navbar />
-      <AnimatedText />
+      {/*<AnimatedText />*/}
+      <Hero />
     </main>
   );
 }
