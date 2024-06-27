@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar";
+import About from "@/components/landing-page/About";
 import AnimatedText from "@/components/landing-page/AminatedText";
 import Hero from "@/components/landing-page/Hero";
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
       <Navbar />
       {/*<AnimatedText />*/}
       <Hero />
+      <About />
     </main>
   );
 }
