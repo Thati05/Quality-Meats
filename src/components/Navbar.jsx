@@ -10,7 +10,7 @@ const Navbar = () => {
   const router = useRouter();
 
   return (
-    <nav className=' pt-[10px] pr-[50px] pl-[10px]  flex flex-row justify-between items-center  '>
+    <nav className=' pt-[10px] pr-[50px] pl-[10px]  flex flex-row justify-between items-center max-[824px]:pr-[20px] '>
       <div
         className='w-[100px]'
       >
@@ -18,7 +18,7 @@ const Navbar = () => {
           className=' object-contain'
           src={logo} />
       </div>
-      <div className=' flex flex-row gap-20 '>
+      <div className=' flex flex-row gap-20 max-[827px]:hidden '>
         <Link href="/">Home</Link>
         <Link href="/about-us">About Us</Link>
         <Link href="/products">Product </Link>
@@ -28,10 +28,12 @@ const Navbar = () => {
       </div>
       <button
 
-        className=' py-[10px] px-[20px] bg-primaryColor text-white'
+        className='max-[827px]:hidden max-[824px]:ml-5  py-[10px] px-[20px] bg-primaryColor text-white'
         onClick={() => router.push('/contact-us')}>
         Contact Us
       </button>
+
+      {/*Humburger Icon*/}
 
     </nav>
   )
