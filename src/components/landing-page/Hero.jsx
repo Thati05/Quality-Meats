@@ -4,7 +4,7 @@ import { hero } from '@/assets'
 
 const Hero = () => {
   return (
-    <section className='flex items-center  justify-center p-20 '>
+    <section className='flex items-center  justify-center p-20 pb-0 '>
       <div className='relative flex justify-center items-center overflow-hidden w-full '>
 
         <Image
