@@ -4,10 +4,10 @@ import { aboutimg, image } from '@/assets'
 
 const About = () => {
   return (
-    <section className='flex w-screen mt-20 relative'>
-      <div className=''>
+    <section className='flex w-full mt-20 relative '>
+      <div className='bg-[#FDF7F7] py-20'>
 
-        <div className='max-[1160px]:bg-[#FDF7F7]   items-center gap-20 mx-20 max-[1160px]:mx-0 max-[1160px]:p-20 flex flex-row justify-between'>
+        <div className='   items-center gap-20 mx-20 max-[1160px]:mx-0   max-[1160px]:p-20 flex flex-row justify-between'>
           <Image
             src={image}
             width={450}
