@@ -4,7 +4,8 @@ import { chicken, goat, sheep, cow, pig } from '@/assets'
 export const animals = [
   {
     src: cow,
-    title: "Cow"
+    title: "Cow",
+    w: "20px"
   },
   {
     src: sheep,
